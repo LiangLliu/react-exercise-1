@@ -1,0 +1,20 @@
+.education{
+    width: 100%;
+    height: auto;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+    h2{
+        color: red;
+        margin-bottom: 50px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+}

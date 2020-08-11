@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './eduInfo.css';
+import './eduInfo.scss';
 
 class EduInfo extends Component {
   constructor(props) {
@@ -7,18 +7,15 @@ class EduInfo extends Component {
   }
   render() {
     // eslint-disable-next-line react/prop-types
-    const { time, title, content } = this.props.info;
+    const { time, title, content } = this.props;
     return (
-      <div className="warp">
-        <aside>
-          <label id="time">{time}</label>
-        </aside>
-
-        <article id="article">
-          <h2>{title}</h2>
+      <section className="warp">
+        <h4 id="time">{time}</h4>
+        <article className="article">
+          <h3>{title}</h3>
           <p id="content">{content}</p>
         </article>
-      </div>
+      </section>
     );
   }
 }
